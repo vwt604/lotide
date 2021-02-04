@@ -58,8 +58,8 @@ const allTheLetters = {
 
 //TEST CASE
 
-const result1 = countLetters("lighthouse labs in the house", allTheLetters)
+const result1 = countLetters("lighthouse labs in the house", allTheLetters);
 
-assertEqual(result1["l"], 2)
-assertEqual(result1["i"], 1)
-assertEqual(result1["v"], 1)
+assertEqual(result1["l"], 2);
+assertEqual(result1["i"], 1);
+assertEqual(result1["v"], 1);
