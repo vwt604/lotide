@@ -21,7 +21,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-//FUNCTION
+//FUNCTION: returns a "slice of the array with elements taken from the beginning." 
 
 const takeUntil = function(array, callback) {
   for (let i = 0; i < array.length; i++) {
@@ -32,7 +32,21 @@ const takeUntil = function(array, callback) {
   }
 };
 
-//TEST
+///FUNCTION: METHOD 2
+
+const takeUntilTwo = function(array, callback) {
+  const results = [];
+  for (let elm of array) {
+    if (!callback(elm)) {   //anonymous callback
+      results.push(elm);
+    } else {
+      return results;
+    }
+  }
+};
+
+//TEST CODE
+
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0); //where to stop
 console.log(results1);
