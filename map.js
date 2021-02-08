@@ -23,21 +23,22 @@ const assertArraysEqual = function(array1, array2) {
 
 //THE FUNCTION: returns new array with the first letter of each word in the given array
 
-const words = ["ground", "control", "to", "major", "tom"];
-
-const map = function(array, callback) {
+const map = function(array, callback) { //takes in an array and callback 
   const results = [];
-  for (let item of array) {
+  for (let item of array) {   //for every item in array, 
     results.push(callback(item));
   }
   return results;
 };
 
 
+const words = ["ground", "control", "to", "major", "tom"];
+const mapResults = map(words, word => word[0]);     //returns array of first letters
 
-const mapResults = map(words, word => word[0]);
 
 //TEST CASE
 
 assertArraysEqual(mapResults, ['g', 'c', 't', 'm', 't']);
 assertArraysEqual(mapResults[1], ['c']);
+
+npm run 0 

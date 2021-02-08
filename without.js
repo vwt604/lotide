@@ -20,18 +20,30 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 
-const without = function(array1, excludedValues) {
-  for (let a = 0; a < excludedValues.length; a++) {
+// const without = function(array1, excludedValues) {
+//   for (let a = 0; a < excludedValues.length; a++) {
 
-    for (let b = 0; b < array1.length; b++) {
+//     for (let b = 0; b < array1.length; b++) {
 
-      if (array1[b] === excludedValues[a]) {
-        array1.splice(b,1);
-      }
-    }
+//       if (array1[b] === excludedValues[a]) {
+//         array1.splice(b,1);
+//       }
+//     }
+//   }
+//   return array1;
+// };
+
+let with = [1,2,3,4,5];
+let without = [1,2,3];
+
+const finalArray = function (with, without) {
+  for (let i = 0; i < with.length; i ++) {
+    //if (without[i] === with[i])
   }
-  return array1;
-};
+}
+
+
+
 
 //tests
 

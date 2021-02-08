@@ -15,12 +15,15 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(string, lettersToCount) {
   const results = {};
   for (const letter of string) {
-    if (lettersToCount[letter]) {
+    if (lettersToCount[letter]) { //letersToCount = const allTheLetters; letter = key (a,b,c,..)
+     console.log('this is lettersToCount',lettersToCount);
+      console.log('this is letter',letter);
       if (results[letter]) {
+        console.log('this is results', results)
         results[letter] += 1;
       } else {
         results[letter] = 1;
-      }
+      }ef
     }
   }
   return results;
